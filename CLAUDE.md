@@ -9,9 +9,10 @@
 - [x] GA4 실측 데이터 수집 (속성 ID: 309589221)
 - [x] 문제 정의 완성 (한승헌T 공식 적용, 실데이터 기반)
 - [x] 가설 3개 초안 완성
-- [x] Design Judgment 완성 (판단 3개 — Clip / 온보딩 재설계 / Agent·Editor 공간 분리)
-- [ ] Evidence 작성 (UT 실제 진행 여부 확인 필요, 정성적 근거 정리)
-- [ ] Outcome / Reflection 작성
+- [x] Design Judgment 완성 (판단 3개 — Clip / 예시 프롬프트 / Agent·Editor 공간 분리)
+- [x] Evidence 완성 (설문 N=9 + PO 피드백 + GA4 지표 + Before/After)
+- [x] Reflection 완성
+- **틸노트 케이스스터디 전체 완성 (2026-03-28)**
 
 # 중요한 결정사항
 
@@ -22,16 +23,7 @@
 
 # 다음 세션에서 할 일
 
-1. **Evidence 섹션 작성** ← 다음 시작점
-   - 먼저 확인: 틸노트 프로젝트에서 UT(사용성 테스트)를 실제 진행했는지 여부
-   - UT 했다면: 참여 인원, 주요 피드백 내용 정리
-   - UT 없다면: 정성적 근거(VOC, 팀 내 피드백 등) + 현재 GA4 지표 중심 구성
-2. **Outcome 섹션 작성**
-   - Before/After 불가 상황 솔직하게 명시
-   - 현재 시점 지표(first_note_created 250명/16.5%) 중심으로 구성
-3. **Reflection 완성**
-   - 측정 설계 사전 부재 교훈
-   - Agent 활용 미측정 한계
+틸노트 케이스스터디 완성. 다음 작업 미정.
 
 # 주의사항
 
