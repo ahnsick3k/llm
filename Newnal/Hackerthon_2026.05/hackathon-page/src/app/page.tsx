@@ -591,7 +591,7 @@ export default function HackathonPage() {
                 { label: 'WHEN', lines: ['May 9–10, 2026 (Sat–Sun)'], highlight: false },
                 { label: 'WHERE', lines: ['Stanford Shriram Center for Bioengineering and Chemical Engineering'], highlight: false },
                 { label: 'WHO', lines: ['Open to all Stanford undergraduate & graduate students', 'Individuals or teams welcome — max 5 members per team, up to 20 teams'], highlight: false },
-                { label: 'PRIZE', lines: ['- 1ST PLACE  $5,000', '- 2ND PLACE  $3,000', '- 3RD PLACE  $2,000', '---', 'Winning teams will be granted a main-stage speaking slot at the AI OS Conference on May 18th.'], highlight: false },
+                { label: 'PRIZE', lines: ['- 1ST PLACE  $5,000', '- 2ND PLACE  $3,000', '- 3RD PLACE  $2,000', '---', 'Winning teams will be granted a main-stage speaking slot at the AIOS Conference on May 18th.'], highlight: false },
               ].map((row) => (
                 <div
                   key={row.label}
@@ -1147,11 +1147,8 @@ export default function HackathonPage() {
             </div>
 
             <Body>
-              Winning teams will be granted a main-stage speaking slot at the Newnal AIOS
-              Conference on May 18th.
+              Winning teams will be granted a main-stage speaking slot at the AIOS Conference on May 18th. Sponsored by Stanford SDGC and Newnal.
             </Body>
-
-            <Callout>Sponsored by Stanford SDGC and Newnal.</Callout>
           </Inner>
         </SectionReveal>
       </section>
@@ -1201,7 +1198,7 @@ export default function HackathonPage() {
                   {[
                     'Panel from SDGC, Newnal, and invited industry leaders',
                     'All team presentations on May 10 evaluated',
-                    'Winners get main-stage speaking slot at AI OS Conference on May 18',
+                    'Winners get main-stage speaking slot at AIOS Conference on May 18',
                   ].map((item, i) => (
                     <li
                       key={i}
