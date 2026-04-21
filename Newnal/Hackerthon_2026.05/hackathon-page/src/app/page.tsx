@@ -1187,7 +1187,7 @@ export default function HackathonPage() {
                     marginBottom: 16,
                   }}
                 >
-                  Criteria
+                  Judging
                 </h3>
                 <ul style={{ listStyle: 'none', padding: 0 }}>
                   {[
