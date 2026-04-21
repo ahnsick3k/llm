@@ -739,7 +739,6 @@ export default function HackathonPage() {
         {/* 콘텐츠 — 하단 배치 */}
         <SectionReveal style={{ position: 'relative', zIndex: 2, display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', minHeight: 480 }}>
           <Inner style={{ textAlign: 'center', paddingTop: 320 }}>
-            <SecNum>— SPECIAL BENEFIT —</SecNum>
             <SectionTitle>Every Participant Gets a Newnal Phone</SectionTitle>
             <Message>
               As a special first release, all participants will be provided with the{' '}
@@ -764,7 +763,6 @@ export default function HackathonPage() {
       >
         <SectionReveal>
           <Inner>
-            <SecNum>— THE CHALLENGE —</SecNum>
             <SectionTitle>Join the First Generation of Builders</SectionTitle>
             <Message>
               Every once in a while, a revolutionary product changes everything. 1995 gave us
@@ -796,9 +794,8 @@ export default function HackathonPage() {
       >
         <SectionReveal>
           <Inner>
-            <SecNum>— TRACKS —</SecNum>
             <SectionTitle>Choose Your Track</SectionTitle>
-            <Message>Two paths. One mission: reinvent the phone. Participants may choose one of the following tracks or combine elements across tracks.</Message>
+            <Message>Participants may choose one of the following tracks or combine elements across tracks.</Message>
 
             <div
               className="track-grid"
@@ -954,7 +951,6 @@ export default function HackathonPage() {
       >
         <SectionReveal>
           <Inner>
-            <SecNum>— SCHEDULE —</SecNum>
             <SectionTitle>Event Schedule</SectionTitle>
 
             <div style={{ marginTop: 48 }}>
@@ -1006,12 +1002,12 @@ export default function HackathonPage() {
                 {
                   date: 'MAY 9',
                   day: 'DAY 1',
-                  details: ['09:00  Check-in', '09:30  Opening', '13:00  Working Session'],
+                  details: ['09:00 – 09:30: Check-in & device distribution at Shriram Center', '09:30 – 12:00: Opening session, introductions, keynote series', '12:00 – 13:00: Lunch provided.', '13:00: Working Session starts. Students are free to work anywhere.'],
                 },
                 {
                   date: 'MAY 10',
                   day: 'DAY 2',
-                  details: ['13:30  Check-in', '14:00 – 17:00  Presentations', '17:00  Winners Announced'],
+                  details: ['13:30: Check-in at Shriram Center', '14:00 – 17:00: Team presentations', '17:00: Winner announcements'],
                 },
                 {
                   date: 'MAY 18',
@@ -1092,7 +1088,6 @@ export default function HackathonPage() {
       >
         <SectionReveal>
           <Inner>
-            <SecNum>— PRIZES —</SecNum>
             <SectionTitle>Total Prize Pool: $10,000</SectionTitle>
 
             {/* Prize Grid */}
@@ -1168,7 +1163,6 @@ export default function HackathonPage() {
       >
         <SectionReveal>
           <Inner>
-            <SecNum>— HOW TO PARTICIPATE —</SecNum>
             <SectionTitle>Judging &amp; What to Bring</SectionTitle>
 
             {/* Two-col grid */}
@@ -1193,7 +1187,7 @@ export default function HackathonPage() {
                     marginBottom: 16,
                   }}
                 >
-                  Judging Criteria
+                  Criteria
                 </h3>
                 <ul style={{ listStyle: 'none', padding: 0 }}>
                   {[
@@ -1287,7 +1281,6 @@ export default function HackathonPage() {
       >
         <SectionReveal>
           <Inner>
-            <SecNum>— ABOUT —</SecNum>
             <SectionTitle>About the Organizers</SectionTitle>
 
             <div
@@ -1313,10 +1306,7 @@ export default function HackathonPage() {
                   Newnal
                 </h3>
                 <p className="body-text" style={{ color: C.textBody, lineHeight: 1.9 }}>
-                  Newnal is developing a next-generation AI-native operating system on mobile
-                  devices, enabling a new paradigm of deeply personalized AI agents and
-                  experiences. Each user interacts with a personal AI that proactively generates
-                  recommendations tailored to individual preferences, contexts, and needs.
+                  Newnal is building the world's first AI Native Operating System — a ground-up OS where AI manages personal data, proactively assists users, and replaces apps with an agent ecosystem. The team previously built COOV, a digital vaccine pass used by 43M+ people in South Korea. Newnal AIOS ships on its own hardware, with 5,000 V1 devices produced.
                 </p>
               </div>
 

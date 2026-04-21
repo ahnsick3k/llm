@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Reinventing the Phone: AI-Native OS Hackathon | Newnal × Stanford SDGC",
+  title: "AI-Native OS Hackathon",
   description:
     "The Era of Apps is Over. The Era of AI-native OS has Begun. May 9–10, 2026 at Stanford University. $10,000 in prizes.",
   openGraph: {
