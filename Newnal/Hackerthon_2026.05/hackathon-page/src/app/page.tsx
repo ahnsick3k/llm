@@ -959,7 +959,7 @@ export default function HackathonPage() {
             <div style={{ marginTop: 48 }}>
               {/* Simple rows */}
               {[
-                { date: '~ MAY 4', label: 'Applications Open Until May 5', sub: 'Selected applicants will be notified — not all who apply are guaranteed a spot.' },
+                { date: '~ MAY 4', label: 'Applications Open Until May 4', sub: 'Selected applicants will be notified — not all who apply are guaranteed a spot.' },
               ].map((item, i) => (
                 <div
                   key={i}
