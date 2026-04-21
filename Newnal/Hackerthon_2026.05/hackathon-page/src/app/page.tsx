@@ -1014,7 +1014,7 @@ export default function HackathonPage() {
                 },
                 {
                   date: 'MAY 18',
-                  day: 'AI OS CONFERENCE',
+                  day: 'UPCOMING CONFERENCE',
                   details: ['Winning teams will be granted a main-stage speaking slot'],
                 },
               ].map((item, i) => (
