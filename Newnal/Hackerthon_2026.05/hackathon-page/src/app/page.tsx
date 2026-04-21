@@ -1388,7 +1388,7 @@ export default function HackathonPage() {
           </span>
           <span
             style={{
-              fontFamily: FONT.mono,
+              fontFamily: FONT.body,
               fontSize: 11,
               color: C.gray,
               letterSpacing: '0.05em',
