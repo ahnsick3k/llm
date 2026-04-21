@@ -1356,10 +1356,6 @@ export default function HackathonPage() {
                 This is not the era where AI becomes the center of the world.
                 <br />
                 This is the era where you become the center of AI.
-                <br />
-                <span style={{ color: C.accent, fontWeight: 500, fontStyle: 'normal' }}>
-                  Newnal begins here.
-                </span>
               </p>
             </div>
           </Inner>
