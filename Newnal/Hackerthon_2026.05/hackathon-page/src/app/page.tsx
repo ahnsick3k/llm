@@ -461,6 +461,7 @@ export default function HackathonPage() {
         }}
       >
         <div
+          className="nav-inner"
           style={{
             maxWidth: 1300,
             margin: '0 auto',
