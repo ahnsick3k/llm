@@ -475,7 +475,9 @@ export default function HackathonPage() {
         >
           {/* Logo */}
           <a
-            href="#"
+            href="https://newnal.com"
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
               fontFamily: FONT.syne,
               fontSize: 18,
