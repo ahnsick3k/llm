@@ -492,7 +492,7 @@ export default function HackathonPage() {
 
           {/* CTA Buttons */}
           <div style={{ display: 'flex', gap: 10, flexShrink: 0 }}>
-            <PrimaryBtn href="https://luma.com/rrdnhd97" small>REGISTER</PrimaryBtn>
+            <PrimaryBtn href="https://forms.gle/hPLxL6qfwoBp8yLE7" small>REGISTER</PrimaryBtn>
             <SecondaryBtn href="https://discord.gg/utpTjdCRNe" small>DISCORD</SecondaryBtn>
           </div>
         </div>
@@ -645,7 +645,7 @@ export default function HackathonPage() {
               style={{ display: 'flex', paddingTop: 40 }}
             >
               <a
-                href="https://luma.com/rrdnhd97"
+                href="https://forms.gle/hPLxL6qfwoBp8yLE7"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
