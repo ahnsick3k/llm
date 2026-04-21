@@ -1197,7 +1197,7 @@ export default function HackathonPage() {
                 <ul style={{ listStyle: 'none', padding: 0 }}>
                   {[
                     'Panel from SDGC, Newnal, and invited industry leaders',
-                    'All team presentations on May 10 evaluated',
+                    'All presentations will be evaluated on May 10',
                     'Winners get main-stage speaking slot at upcoming conference on May 18',
                   ].map((item, i) => (
                     <li
