@@ -1,24 +1,53 @@
 # 프로젝트 개요
 
-틸노트(Tilnote) IR 덱 초안 작성 + UX 포트폴리오 케이스스터디 프로젝트.
-CMK 임팩트프레너 공모 지원을 위한 IR 덱 작성 중.
+틸노트(Tilnote) IR 덱 + Beautiful Sudoku iOS 앱 개발 병행 중.
 
 # 현재 작업 상태
 
-## 틸노트 케이스스터디
-- **전체 완성 (2026-03-28)**
-
 ## 틸노트 IR 덱
-- [x] VC 에이전트 피드백 수렴 (3개 에이전트)
-- [x] IR 덱 본문 초안 작성 (`tilnote/BusinessCanvas/ir-deck-본문-초안-v1.md`)
-- [x] 팀 슬라이드 완성 (문지학 대표 + 안식 디자인총괄)
-- [x] Ask 섹션 완성 (1억 3,000만 원 / CMK 임팩트프레너)
-- [x] 자금 사용 계획 + 마일스톤 완성
-- [x] 매출 구조 확정 (월 약 50만원 근사치 배분)
-- [x] 유료 플랜 단가 확정 (프로 9,900원 / 플래티넘 24,900원)
-- [x] 설문 N=9 긍정 인사이트 반영
-- [x] 체크리스트 전 항목 완료
-- **IR 덱 초안 완성 (2026-04-04)**
+- **초안 완성 (2026-04-04)** — 다음 단계: Google Slides 실제 제작
+
+## Beautiful Sudoku iOS 앱 (`Sudoku/sudoku/`)
+- **개발 진행 중 (2026-04-30 ~ 2026-05-04)**
+
+### 완성된 기능
+- [x] 게임 화면: 보드, 하트(생명), 타이머, 힌트, 지우기
+- [x] 커스텀 키패드 (시스템 키보드 대체) — Dock+패드 단일 컴포넌트
+- [x] 셀 탭 → 키패드 올라옴 / 재탭 → 내려감
+- [x] 완성된 숫자 키패드 비활성화 (다크모드 호환 포함)
+- [x] 게임오버(하트 소진) / 클리어 모달
+- [x] 난이도 6단계: Baby·Easy·Normal·Hard·Master·Doctor
+- [x] 홈화면: Drum Picker (1드래그=1스냅), 블러 보드 미리보기, 고정 배경 선택 하이라이트
+- [x] xAI 디자인 시스템 (Light/Dark 어댑티브)
+- [x] 다크/라이트 모드 Toggle (메뉴)
+- [x] 메뉴화면: New Game·Restart·난이도 목록·테마 토글
+- [x] 샵화면: 힌트5·힌트10·하트+1
+- [x] 홈→게임 동일 퍼즐 전달 (blur 미리보기 = 실제 게임 판)
+- [x] 난이도별 클리어 점수 차등 (500~4000점)
+
+### 남은 작업
+- [ ] Drum Picker 선택 인식성 개선
+- [ ] TestFlight 빌드 및 내부 테스트
+- [ ] App Store 등록 준비
+
+## Beautiful Sudoku 웹앱 (`Sudoku/sudoku-web/`)
+- **배포 완료 (2026-05-04)**
+- **URL**: https://sudoku-one-tau.vercel.app
+- **GitHub**: https://github.com/ahnsick3k/sudoku
+
+### 완성된 기능
+- [x] Next.js 16 + Tailwind v4 + TypeScript
+- [x] iOS 앱과 동일한 6단계 난이도 (100개 퍼즐 × 6난이도)
+- [x] 3×3 커스텀 키패드 + 키보드 입력 (1-9, Backspace, Escape)
+- [x] Heroicons 전체 적용
+- [x] 44px 터치 영역 (Apple HIG 기준)
+- [x] 다크/라이트 모드 Toggle 스위치 컴포넌트
+- [x] 홈화면: Drum Picker, 블러 보드 미리보기
+- [x] 게임화면: 보드, 하트, 타이머, 힌트, 지우기
+- [x] 메뉴·샵 바텀시트
+- [x] Google Analytics 연동 (G-0YYCWGGJXK)
+- [x] xAI 디자인 시스템 (Design.md 문서화)
+- [x] Vercel 배포 완료
 
 # 중요한 결정사항
 
@@ -36,6 +65,8 @@ CMK 임팩트프레너 공모 지원을 위한 IR 덱 작성 중.
 
 1. Google Slides로 실제 IR 덱 제작 (12슬라이드 구조)
 2. CMK 임팩트프레너 공모 지원서 작성 (https://www.cmk-impactpreneur.kr/Apply)
+3. Beautiful Sudoku iOS TestFlight 빌드
+4. Beautiful Sudoku 웹앱 추가 개선 (필요 시)
 
 # 주의사항
 
@@ -130,4 +161,43 @@ git commit -m "YYYY-MM-DD: 작업 요약"
 
 ---
 
-_최종 업데이트: 2026-04-04_
+_최종 업데이트: 2026-05-04_
+
+<!-- code-review-graph MCP tools -->
+## MCP Tools: code-review-graph
+
+**IMPORTANT: This project has a knowledge graph. ALWAYS use the
+code-review-graph MCP tools BEFORE using Grep/Glob/Read to explore
+the codebase.** The graph is faster, cheaper (fewer tokens), and gives
+you structural context (callers, dependents, test coverage) that file
+scanning cannot.
+
+### When to use graph tools FIRST
+
+- **Exploring code**: `semantic_search_nodes` or `query_graph` instead of Grep
+- **Understanding impact**: `get_impact_radius` instead of manually tracing imports
+- **Code review**: `detect_changes` + `get_review_context` instead of reading entire files
+- **Finding relationships**: `query_graph` with callers_of/callees_of/imports_of/tests_for
+- **Architecture questions**: `get_architecture_overview` + `list_communities`
+
+Fall back to Grep/Glob/Read **only** when the graph doesn't cover what you need.
+
+### Key Tools
+
+| Tool | Use when |
+|------|----------|
+| `detect_changes` | Reviewing code changes — gives risk-scored analysis |
+| `get_review_context` | Need source snippets for review — token-efficient |
+| `get_impact_radius` | Understanding blast radius of a change |
+| `get_affected_flows` | Finding which execution paths are impacted |
+| `query_graph` | Tracing callers, callees, imports, tests, dependencies |
+| `semantic_search_nodes` | Finding functions/classes by name or keyword |
+| `get_architecture_overview` | Understanding high-level codebase structure |
+| `refactor_tool` | Planning renames, finding dead code |
+
+### Workflow
+
+1. The graph auto-updates on file changes (via hooks).
+2. Use `detect_changes` for code review.
+3. Use `get_affected_flows` to understand impact.
+4. Use `query_graph` pattern="tests_for" to check coverage.

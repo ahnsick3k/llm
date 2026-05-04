@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Syne, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const syne = Syne({
@@ -40,6 +41,18 @@ export default function RootLayout({
       className={`${syne.variable} ${geistMono.variable}`}
     >
       <body>{children}</body>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-17Z2JVDVK9"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-17Z2JVDVK9');
+        `}
+      </Script>
     </html>
   );
 }

@@ -1,6 +1,16 @@
 'use client';
 
 import { useEffect, useRef, type CSSProperties, type ReactNode } from 'react';
+
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
+function trackCTA(button_name: string) {
+  window.gtag?.('event', 'cta_click', { button_name });
+}
 import Image from 'next/image';
 
 /* ═══════════════════════════════════════════════════════════
@@ -186,12 +196,14 @@ function Divider() {
 }
 
 /* ── Primary Button ── */
-function PrimaryBtn({ children, href, small }: { children: ReactNode; href: string; small?: boolean }) {
+function PrimaryBtn({ children, href, small, onClick, className }: { children: ReactNode; href: string; small?: boolean; onClick?: () => void; className?: string }) {
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={onClick}
+      className={className}
       style={{
         display: 'inline-block',
         background: C.accent,
@@ -216,12 +228,14 @@ function PrimaryBtn({ children, href, small }: { children: ReactNode; href: stri
 }
 
 /* ── Secondary Button ── */
-function SecondaryBtn({ children, href, small }: { children: ReactNode; href: string; small?: boolean }) {
+function SecondaryBtn({ children, href, small, onClick, className }: { children: ReactNode; href: string; small?: boolean; onClick?: () => void; className?: string }) {
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={onClick}
+      className={className}
       style={{
         display: 'inline-block',
         background: 'transparent',
@@ -492,8 +506,8 @@ export default function HackathonPage() {
 
           {/* CTA Buttons */}
           <div style={{ display: 'flex', gap: 10, flexShrink: 0 }}>
-            <PrimaryBtn href="https://forms.gle/hPLxL6qfwoBp8yLE7" small>REGISTER</PrimaryBtn>
-            <SecondaryBtn href="https://discord.gg/utpTjdCRNe" small>DISCORD</SecondaryBtn>
+            <PrimaryBtn href="https://forms.gle/hPLxL6qfwoBp8yLE7" small onClick={() => trackCTA('nav_register')} className="GTM-btn-register">REGISTER</PrimaryBtn>
+            <SecondaryBtn href="https://discord.gg/utpTjdCRNe" small onClick={() => trackCTA('nav_discord')} className="GTM-btn-discord">DISCORD</SecondaryBtn>
           </div>
         </div>
       </nav>
@@ -648,6 +662,8 @@ export default function HackathonPage() {
                 href="https://forms.gle/hPLxL6qfwoBp8yLE7"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackCTA('hero_register')}
+                className="GTM-btn-register"
                 style={{
                   flex: 1,
                   display: 'flex',
@@ -674,6 +690,8 @@ export default function HackathonPage() {
                 href="https://discord.gg/utpTjdCRNe"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackCTA('hero_discord')}
+                className="GTM-btn-discord"
                 style={{
                   flex: 1,
                   display: 'flex',
